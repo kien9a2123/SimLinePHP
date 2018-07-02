@@ -17,6 +17,20 @@ $message 	= $client->parseEvents()[0]['message'];
 $profil = $client->profil($userId);
 $pesan_datang = $message['text'];
 
+
+if ($type == 'join' || $command == '/menu') {
+    $text = "Hello Friends\n     I'm ChatBot My Creator ?\n\nhttp://line.me/ti/p/~cybertk0\n\nCyber TK\n   Kicker & Security  V.2.1.0    !";
+    $balas = array(
+        'replyToken' => $replyToken,
+        'messages' => array(
+            array(
+                'type' => 'text',
+                'text' => $text
+            )
+        )
+    );
+}
+
 if($message['type']=='sticker')
 {	
 	$balas = array(
