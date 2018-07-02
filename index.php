@@ -49,7 +49,7 @@ if($url['result'] == 404)
 							'messages' => array(
 								array(
 										'type' => 'text',					
-										'text' => 'Mohon Gunakan Bahasa Indonesia Yang Benar :D.'
+										'text' => 'Merhaba.'
 									)
 							)
 						);
@@ -66,7 +66,7 @@ if($url['result'] != 100)
 							'messages' => array(
 								array(
 										'type' => 'text',					
-										'text' => 'Maaf '.$profil->displayName.' Server Kami Sedang Sibuk Sekarang.'
+										'text' => 'Maaf '.$profil->displayName.' Naber'
 									)
 							)
 						);
